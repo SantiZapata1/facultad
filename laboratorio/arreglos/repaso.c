@@ -6,6 +6,7 @@ int esPar(int array[],int tamaño);
 int busqueda(int arreglo[], int longitud, int num);
 int encontrar(int arreglo[], int longitud, int posicion);
 void mostrarNum(int array[],int longitud);
+void ordenarArreglo(int arreglo[],int longitud);
 
 //funcion principal
 int main(){
@@ -38,7 +39,9 @@ int main(){
 
     printf("\n el numero %i aparece %i veces en el arreglo. ", numero, busqueda(arreglo,longitud,numero));
 
-    printf("\n en esa posicion esta el numero: %i ", encontrar(arreglo,longitud,posicion));
+    printf("\n en esa posicion esta el numero: %i \n", encontrar(arreglo,longitud,posicion));
+
+    ordenarArreglo(arreglo,longitud);
 
     return 0;
 }
@@ -60,7 +63,7 @@ int esPrimo(int num) {
 //procedimiento para mostrar elementos de un array
 void mostrarNum(int array[],int longitud){
 
-    printf("elementos y cuales son primos:");
+    printf("elementos y cuales son primos:\n");
 
     for(int i=0;i<longitud;i++){
         if(esPrimo(array[i])==1){
@@ -110,3 +113,30 @@ int encontrar(int arreglo[], int longitud, int posicion){
 
     return arreglo[posicion];
 }
+
+//procedimiento para ordenar arreglo
+void ordenarArreglo(int arreglo[], int longitud) {
+    int siguiente, temp;
+
+    for (int actual = 0; actual < longitud - 1; actual++) {
+        siguiente = actual + 1;
+
+        while (siguiente < longitud) {
+            if (arreglo[actual] > arreglo[siguiente]) {
+                temp = arreglo[actual];
+                arreglo[actual] = arreglo[siguiente];
+                arreglo[siguiente] = temp;
+            }
+            siguiente++;
+        }
+    }
+
+    printf("Arreglo ordenado: ");
+    for (int i = 0; i < longitud; i++) {
+        printf("%i ", arreglo[i]);
+    }
+    printf("\n");
+}
+
+
+
