@@ -1,14 +1,17 @@
 #include <stdio.h>
 
+//declaracion de funciones y procedimientos
 int esPrimo(int num);
-void mostrarNum(int array[],int longitud);
 int esPar(int array[],int tamaño);
 int busqueda(int arreglo[], int longitud, int num);
 int encontrar(int arreglo[], int longitud, int posicion);
+void mostrarNum(int array[],int longitud);
 
+//funcion principal
 int main(){
 
     int longitud=0;
+    int posicion;
     int numero;
 
     do{
@@ -21,7 +24,7 @@ int main(){
 
     for(int i=0;i<longitud;i++){
 
-        printf("\ningrese dato de la posicion %i: ", i);
+        printf("ingrese dato de la posicion %i: ", i);
         scanf("%i",&arreglo[i]);
 
     }
@@ -35,11 +38,12 @@ int main(){
 
     printf("\n el numero %i aparece %i veces en el arreglo. ", numero, busqueda(arreglo,longitud,numero));
 
-    encontrar(arreglo,longitud,posicion);
+    printf("\n en esa posicion esta el numero: %i ", encontrar(arreglo,longitud,posicion));
 
     return 0;
 }
 
+//funcion primo
 int esPrimo(int num) {
     if (num <= 1) {
         return 0;
@@ -50,11 +54,13 @@ int esPrimo(int num) {
             return 0;
         }
     }
-
     return 1;
 }
 
+//procedimiento para mostrar elementos de un array
 void mostrarNum(int array[],int longitud){
+
+    printf("elementos y cuales son primos:");
 
     for(int i=0;i<longitud;i++){
         if(esPrimo(array[i])==1){
@@ -65,6 +71,7 @@ void mostrarNum(int array[],int longitud){
     }
 }
 
+//funcion para saber si un arreglo es par
 int esPar(int array[], int tamaño){
 
     int cantidad=0;
@@ -75,11 +82,10 @@ int esPar(int array[], int tamaño){
             cantidad++;
         }
     }
-
     return cantidad;
-
 }
 
+//funcion para buscar un numero
 int busqueda(int arreglo[], int longitud, int num){
 
     int contador = 0;
@@ -94,6 +100,7 @@ int busqueda(int arreglo[], int longitud, int num){
 
 }
 
+//funcion para conocer valor de una posicion
 int encontrar(int arreglo[], int longitud, int posicion){
 
     do{
