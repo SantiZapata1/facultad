@@ -1,3 +1,4 @@
+package matrices;
 import java.util.Scanner;
 
 public class baseMatriz {

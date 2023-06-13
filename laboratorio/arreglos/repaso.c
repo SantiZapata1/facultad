@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//conocer las diferentes formas de ordenar un arreglo que estan en el pdf de laboratorio
+
 //declaracion de funciones y procedimientos
 int esPrimo(int num);
 int esPar(int array[],int tamaño);

@@ -1,0 +1,28 @@
+En la programacion orientada a objetos se trabajan con diferentes entidades
+que se diferencias de los demas a traves de sus caracteristicas, y entre estos se
+pueden relacionar segun los comportamientos o acciones que se pueden realizar entre
+estos.
+
+abstraccion: pensar solo en lo importante
+
+tecnicas en la que se basa: 
+- Herencia
+-Abstraccion
+-Polimorfismo
+-Encapsulamiento
+
+clase:
+Una clase es un molde o plantilla que posee atributos y metodos, que sirven para 
+representar objetos, todo objeto es instancia de una clase
+
+-atributos: son las caracteristicas de cada objeto, y cada uno tiene su propio valor
+-metodos: 
+-
+
+Los modificadores de acceso son palabras clave que se utilizan para establecer el nivel de acceso o visibilidad de clases, variables, métodos y constructores:
+
+-Public (public): El elemento al que se le aplica este modificador es accesible desde cualquier parte del programa, ya sea desde dentro de la misma clase, desde otras clases del mismo paquete o desde clases de paquetes externos.
+
+-Private (private): El elemento al que se le aplica este modificador es accesible únicamente dentro de la misma clase. No se puede acceder a él desde clases externas, incluso si pertenecen al mismo paquete.
+
+constructores: un constructor es un método especial dentro de una clase que se utiliza para inicializar objetos. Su nombre es siempre el mismo que el de la clase y no tiene un tipo de retorno declarado.
