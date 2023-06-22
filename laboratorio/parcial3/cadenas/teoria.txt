@@ -1,0 +1,6 @@
+-La función strcat es una función de la biblioteca <string.h> en C que se utiliza para concatenar o unir dos cadenas de caracteres. La función toma dos argumentos: la cadena de destino y la cadena de origen.
+
+-La función strlen es otra función de la biblioteca <string.h> en C que se utiliza para determinar la longitud de una cadena de caracteres. La función toma como argumento un puntero al primer carácter de la cadena y devuelve un valor entero que representa la cantidad de caracteres en la cadena, excluyendo el carácter nulo ('\0').
+
+-Mis disculpas por la omisión anterior. La función strcpy es una función de la biblioteca <string.h> en C que se utiliza para copiar una cadena de caracteres a otra cadena. La función toma dos argumentos: la cadena de destino y la cadena de origen.
+
